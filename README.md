@@ -1,4 +1,4 @@
-# Lambda Hubs Web API
+# Node API 1 Guided Project
 
 Guided project for **Node API 1** Module.
 
@@ -14,6 +14,6 @@ The code for the guided project will be written in a single file for simplicity.
 
 - [ ] fork and clone this repository.
 - [ ] **CD into the folder** where you cloned **your fork**.
-- [ ] type `npm i` to download dependencies. This step is equivalent to using `yarn` for React Projects.
+- [ ] type `npm install` to download dependencies.
 
 Please follow along as the instructor builds the API step by step.
