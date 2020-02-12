@@ -26,6 +26,24 @@ server.get("/users/:id", (req,res) => {
    }
 });
 
+server.post("/users", (req,res) => {
+    const newUser = {
+       id: users.length+1,
+       name: "Bob Doe"
+    }
+    users.push(newUser);
+    res.status(201).json(newUser);
+});
+
+server.delete("/users/:id", (req,res) => {
+    const {id} = req.params;
+    const user = users.find( u => u.id == id);
+    if(user) {
+       users.filter( u => u.id !=id)
+    } else {
+       res.status(200).json(user);
+    }
+})
 
 // const server = http.createServer((req,res) => {
 //      res.statusCode = 200;
