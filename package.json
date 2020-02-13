@@ -1,7 +1,12 @@
 {
 	"private": true,
-	"scripts": {},
-	"devDependencies": {},
+	"main": "server.js",
+	"scripts": {
+		"server": "nodemon server.js"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.2"
+	},
 	"dependencies": {
 		"express": "4.17.1"
 	}
